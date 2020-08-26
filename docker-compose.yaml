@@ -1,12 +1,19 @@
 version: '3.1'
 
 services:
-
   mongo:
     image: mongo
     restart: always
-    environment:
-      MONGO_INITDB_ROOT_USERNAME: e2
-      MONGO_INITDB_ROOT_PASSWORD: inf325
-
-  
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jupyter
+    command: jupyter-lab --ip=0.0.0.0 --port=8888 --no-browser --notebook-dir=/jupyter/data --allow-root --NotebookApp.token=''
+    ports:
+      - 8888:8888
+    depends_on:
+      - mongo
+    links:
+      - mongo:mongo
+    tty: true
