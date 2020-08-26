@@ -1,0 +1,12 @@
+{
+  "cod":123,
+  "name":"casas-bahia",
+  "description": "blablabla",
+  "products":
+  [
+    {
+      "cod":123456789123456789,
+      "price": 100
+    }
+  ]
+}

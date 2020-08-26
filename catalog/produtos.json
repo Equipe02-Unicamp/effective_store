@@ -1,0 +1,12 @@
+{
+  "cod": 123456789123456789,
+  "name":"banana",
+  "description":"blablabla",
+  "type": 
+  [
+    {"unit_of_measurement": "kg"},
+    {"color": "yellow"},
+    {}
+  ]
+  
+}
