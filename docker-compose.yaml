@@ -4,6 +4,12 @@ services:
   mongo:
     image: mongo
     restart: always
+    environment:
+      # provide your credentials here
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=root
+    ports:
+      - "27017:27017"
   jupyter:
     build:
       context: .

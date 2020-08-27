@@ -34,3 +34,11 @@ docker-compose down
 ```
 http://localhost:8888/
 ```
+
+## Acessando o mongodb via Shell dentro do Jupiter
+```
+Em um terminal Shell no Jupiter ( $_ ) digite:
+
+$ mongo -u root -p root
+
+```
