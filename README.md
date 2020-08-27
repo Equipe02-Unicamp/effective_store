@@ -12,6 +12,14 @@ Para o desenvolvimento das atividades foram selecionados 3 tipos de banco de dad
 - NEO4J -> Ferramenta que será utilizada para montar uma rede de fornecedores;
 - InfluxDB -> Ferramenta que será utilizada para gravar os logs e possivelmente reproduzi-los dentro de um ambiente de validação.
 
+
+## Consultas
+1. Lojistas com maior número de produtos disponíveis na plataforma
+2. Produtos mais comuns entre os lojistas associados
+3. Lojistas com mais produtos por tipo
+4. Produtos com mais lojistas por região
+5. Lojistas com produtos de determinado tipo por região
+
 ## Subindo ambiente
 ```shell
 docker-compose up -d
