@@ -19,3 +19,5 @@ services:
     links:
       - mongo:mongo
     tty: true
+    volumes:
+      - .:/jupyter/data
