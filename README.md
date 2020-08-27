@@ -30,6 +30,11 @@ docker-compose up -d
 docker-compose down
 ```
 
+## Quando há mudanças no Dockerfile da imagem do jupyter
+```shell
+docker-compose up -d --build
+```
+
 ## Acessando o jupyter
 ```
 http://localhost:8888/
