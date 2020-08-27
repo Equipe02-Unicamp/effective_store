@@ -12,3 +12,17 @@ Para o desenvolvimento das atividades foram selecionados 3 tipos de banco de dad
 - NEO4J -> Ferramenta que será utilizada para montar uma rede de fornecedores;
 - InfluxDB -> Ferramenta que será utilizada para gravar os logs e possivelmente reproduzi-los dentro de um ambiente de validação.
 
+## Subindo ambiente
+```shell
+docker-compose up -d
+```
+
+## Encerrando ambiente
+```shell
+docker-compose down
+```
+
+## Acessando o jupyter
+```
+http://localhost:8888/
+```
