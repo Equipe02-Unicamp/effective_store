@@ -1,4 +1,4 @@
 echo "Building everything up (jupyter lab build)"
-echo '127.0.0.1 mongo' >> /etc/hosts
+sudo echo '127.0.0.1 mongo' >> /etc/hosts
 jupyter lab build
 
