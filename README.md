@@ -39,6 +39,12 @@ http://localhost:8888/
 ```
 Em um terminal Shell no Jupiter ( $_ ) digite:
 
-$ mongo -u root -p root
+$ mongo "mongodb://mongo:27017"
 
+```
+
+## Importando dados no shell no jupyter
+
+```
+$ !mongoimport -h "mongo:27017" --db <NOME_DB> --collection <NOME_DA_COLLECTION> --drop --file <PATH_DO_JSON>
 ```
