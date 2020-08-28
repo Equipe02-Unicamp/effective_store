@@ -1,5 +1,5 @@
 # Trabalho - INF325
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Equipe02-Unicamp/effective_store/master)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Equipe02-Unicamp/effective_store/master?urlpath=lab)
 ## Tópicos
 Os tópicos escolhidos para abordar neste trabalho são:
 - Catálogo de lojistas associados e produtos.
