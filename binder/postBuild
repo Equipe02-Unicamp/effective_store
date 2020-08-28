@@ -1,3 +1,27 @@
+#!/bin/bash
 echo "Building everything up (jupyter lab build)"
 jupyter lab build
 
+###############################################################
+#             mongodb installation commands                   #
+###############################################################
+
+export MONGODB_VERSION=4.2.8
+echo "export MONGODB_VERSION=${MONGODB_VERSION}" >> ~/.bashrc
+echo "export MONGODB_VERSION=${MONGODB_VERSION}" >> ~/.profile
+
+export MONGODB_HOME=$(pwd)/mongodb-${MONGODB_VERSION}
+echo "export MONGODB_HOME=${MONGODB_HOME}"       >> ~/.bashrc
+echo "export MONGODB_HOME=${MONGODB_HOME}"       >> ~/.profile
+
+
+wget  https://fastdl.mongodb.org/linux/mongodb-linux-x86_64-ubuntu1804-${MONGODB_VERSION}.tgz -q  && \
+tar -xvf mongodb-linux-x86_64-ubuntu1804-${MONGODB_VERSION}.tgz >/dev/null                          && \
+rm       mongodb-linux-x86_64-ubuntu1804-${MONGODB_VERSION}.tgz                                     && \
+mv       mongodb-linux-x86_64-ubuntu1804-${MONGODB_VERSION}        mongodb-${MONGODB_VERSION}
+
+# adding bin and sbin to $path
+echo "export PATH=\$PATH:\$MONGODB_HOME/bin"  >> ~/.bashrc
+echo "export PATH=\$PATH:\$MONGODB_HOME/bin"  >> ~/.profile
+
+source ~/.bashrc

@@ -3,4 +3,3 @@ vim
 curl
 wget
 net-tools
-mongodb
