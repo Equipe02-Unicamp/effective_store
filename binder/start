@@ -1,1 +1,1 @@
-RUN echo '127.0.0.1 mongo' >> /etc/hosts
+echo '127.0.0.1 mongo' >> /etc/hosts
