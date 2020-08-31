@@ -1,4 +1,22 @@
 #!/bin/bash
+
+###############################################################
+#          jupyter/jupyterlab extensions/kernels              #
+###############################################################
+
+
+# Beakerx installation
+# echo "Beakerx install"
+# beakerx install
+# echo "Beakerx extensions install"
+# jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build
+# jupyter labextension install beakerx-jupyterlab --no-build
+
+
+# Table of contents Jupyter Lab Extension
+echo "Table of contents Jupyter Lab extension install"
+jupyter labextension install @jupyterlab/toc --no-build
+
 # Jupyter/Jupyterlab extension for proxying internal applications
 # echo "Jupyter/Jupyterlab proxy extension install"
 # jupyter serverextension enable --py jupyter_server_proxy
@@ -37,6 +55,6 @@ mv       mongodb-linux-x86_64-ubuntu1804-${MONGODB_VERSION}        mongodb-${MON
 
 # adding bin and sbin to $path
 echo "export PATH=\$PATH:\$MONGODB_HOME/bin"  >> ~/.bashrc
-echo "export PATH=\$PATH:\$MONGODB_HOME/bin"  >> ~/.profilesource ~/.bashrc
+echo "export PATH=\$PATH:\$MONGODB_HOME/bin"  >> ~/.profile
 
 source ~/.bashrc
