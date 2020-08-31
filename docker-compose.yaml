@@ -4,6 +4,7 @@ services:
   mongo:
     image: mongo
     restart: always
+    network_mode: "host"
     ports:
       - "27017:27017"
   jupyter:
@@ -16,8 +17,7 @@ services:
       - 8888:8888
     depends_on:
       - mongo
-    links:
-      - mongo:mongo
     tty: true
+    network_mode: "host"
     volumes:
       - .:/jupyter/data

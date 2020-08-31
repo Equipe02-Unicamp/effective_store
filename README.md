@@ -45,14 +45,14 @@ http://localhost:8888/
 ```
 Em um terminal Shell no Jupiter ( $_ ) digite:
 
-$ mongo "mongodb://mongo:27017"
+$ mongo
 
 ```
 
 ## Importando dados no shell no jupyter
 
 ```
-$ mongoimport -h "mongo:27017" --db <NOME_DB> --collection <NOME_DA_COLLECTION> --drop --file <PATH_DO_JSON>
+$ mongoimport --db <NOME_DB> --collection <NOME_DA_COLLECTION> --drop --file <PATH_DO_JSON>
 ```
 
 ## Referência para gerar dados

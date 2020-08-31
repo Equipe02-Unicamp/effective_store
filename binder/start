@@ -1,6 +1,7 @@
 #!/bin/bash
 
-echo '127.0.0.1 mongo' >> /etc/hosts
+mkdir ${MONGODB_HOME}/data/db -p
+nohup  ${MONGODB_HOME}/bin/mongod   --dbpath ${MONGODB_HOME}/data/db  &> ~/logs/mongodb-$MONGODB_VERSION.log &
 
 # DO NOT REMOVE(!)
 # Here is why: https://mybinder.readthedocs.io/en/latest/config_files.html#start-run-code-before-the-user-sessions-starts
