@@ -1,6 +1,21 @@
 #!/bin/bash
+# Jupyter/Jupyterlab extension for proxying internal applications
+# echo "Jupyter/Jupyterlab proxy extension install"
+# jupyter serverextension enable --py jupyter_server_proxy
+# jupyter labextension install jupyterlab-server-proxy
+
+
+# Building everything up
 echo "Building everything up (jupyter lab build)"
 jupyter lab build
+
+
+###############################################################
+#             moving to a local installation folder           #
+###############################################################
+
+mkdir -p ~/resources/local
+cd    ~/resources/local
 
 ###############################################################
 #             mongodb installation commands                   #
@@ -22,6 +37,6 @@ mv       mongodb-linux-x86_64-ubuntu1804-${MONGODB_VERSION}        mongodb-${MON
 
 # adding bin and sbin to $path
 echo "export PATH=\$PATH:\$MONGODB_HOME/bin"  >> ~/.bashrc
-echo "export PATH=\$PATH:\$MONGODB_HOME/bin"  >> ~/.profile
+echo "export PATH=\$PATH:\$MONGODB_HOME/bin"  >> ~/.profilesource ~/.bashrc
 
 source ~/.bashrc
