@@ -1,15 +1,18 @@
 import json
 from faker import Faker
 
-COMPANIES_LENGTH = 500
+SELLERS_LENGTH = 500
 fake = Faker()
-companies = []
+sellers = []
 
-for _ in range(COMPANIES_LENGTH):
-    companies.append({
+for _ in range(SELLERS_LENGTH):
+    sellers.append({
         "name": fake.company(),
         "country": fake.country(),
         "catalog": []
     })
 
-print(companies)
+print(sellers)
+
+with open('../catalog/sellers.json', 'w') as outfile:
+    json.dump(sellers, outfile)

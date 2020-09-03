@@ -41,6 +41,12 @@ docker-compose up -d --build
 http://localhost:8888/
 ```
 
+## Executando o bash da imagem jupyter
+
+```
+docker exec -it jupyter /bin/bash
+```
+
 ## Acessando o mongodb via Shell dentro do Jupiter
 ```
 Em um terminal Shell no Jupiter ( $_ ) digite:
