@@ -3,3 +3,4 @@ vim
 curl
 wget
 net-tools
+npm

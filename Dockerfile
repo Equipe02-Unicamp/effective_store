@@ -13,10 +13,11 @@ ENV LANGUAGE en_US.UTF-8
 
 ENV SHELL /bin/bash
 
+COPY ./ ./
+# install node and npm
+RUN chmod +x loadLibs.sh
+RUN ./loadLibs.sh
+
 WORKDIR /jupyter/data/
 
-COPY ./ ./
-
-# building the repo
-RUN pip3 install -r ./binder/requirements.txt
 EXPOSE "8888"

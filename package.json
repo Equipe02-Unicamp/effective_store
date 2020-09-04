@@ -1,0 +1,22 @@
+{
+  "name": "data",
+  "version": "1.0.0",
+  "description": "[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Equipe02-Unicamp/effective_store/master?urlpath=lab) ## Tópicos Os tópicos escolhidos para abordar neste trabalho são: - Catálogo de lojistas associados e produtos. - Log de operações, acessos, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Equipe02-Unicamp/effective_store.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Equipe02-Unicamp/effective_store/issues"
+  },
+  "homepage": "https://github.com/Equipe02-Unicamp/effective_store#readme",
+  "dependencies": {
+    "faker": "^5.1.0"
+  }
+}

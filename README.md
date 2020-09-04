@@ -47,6 +47,13 @@ http://localhost:8888/
 docker exec -it jupyter /bin/bash
 ```
 
+## Install npm dependencies
+```
+docker exec -it jupyter /bin/bash
+npm install
+exit
+```
+
 ## Acessando o mongodb via Shell dentro do Jupiter
 ```
 Em um terminal Shell no Jupiter ( $_ ) digite:
@@ -60,6 +67,7 @@ $ mongo
 ```
 $ mongoimport --db <NOME_DB> --collection <NOME_DA_COLLECTION> --drop --file <PATH_DO_JSON>
 ```
+
 
 ## Referência para gerar dados
 https://pypi.org/project/lorem-text/
