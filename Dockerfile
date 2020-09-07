@@ -14,9 +14,10 @@ ENV LANGUAGE en_US.UTF-8
 ENV SHELL /bin/bash
 
 COPY ./ ./
-# install node and npm
-RUN chmod +x loadLibs.sh
-RUN ./loadLibs.sh
+RUN pip3 install -r ./binder/requirements.txt
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+RUN apt-get install -y nodejs && npm install -g --unsafe-perm ijavascript
+RUN ijsinstall
 
 WORKDIR /jupyter/data/
 
