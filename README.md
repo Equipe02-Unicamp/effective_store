@@ -17,9 +17,12 @@ Para o desenvolvimento das atividades foram selecionados 3 tipos de banco de dad
 ## Consultas
 1. Lojistas com maior número de produtos disponíveis na plataforma
 2. Produtos mais comuns entre os lojistas associados
-3. Lojistas com mais produtos por tipo
+3. Países com mais logistas
 4. Produtos com mais lojistas por região
-5. Lojistas com produtos de determinado tipo por região
+
+## Descartadas (TODO Remover daqui)
+1. Lojistas com mais produtos por tipo
+2. Lojistas com produtos de determinado tipo por região
 
 ## Subindo ambiente
 ```shell
