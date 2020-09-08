@@ -19,5 +19,7 @@ services:
       - mongo
     tty: true
     network_mode: "host"
+    environment:
+      - NODE_OPTIONS=--experimental-repl-await
     volumes:
       - .:/jupyter/data
