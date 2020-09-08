@@ -49,9 +49,12 @@ docker exec -it jupyter /bin/bash
 
 ## Install npm dependencies
 ```
-docker exec -it jupyter /bin/bash
-npm install
-exit
+docker exec -it jupyter npm install
+```
+
+## Install npm library
+```
+docker exec -it jupyter npm install <LIB_NAME>
 ```
 
 ## Acessando o mongodb via Shell dentro do Jupiter
