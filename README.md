@@ -60,7 +60,7 @@ docker exec -it jupyter npm install <LIB_NAME>
 ## Acessando o mongodb via Shell dentro do Jupiter
 ```
 Em um terminal Shell no Jupiter ( $_ ) digite:
-
+dfs
 $ mongo
 
 ```
