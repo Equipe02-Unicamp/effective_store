@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Equipe02-Unicamp/effective_store#readme",
   "dependencies": {
+    "country-data": "0.0.31",
     "faker": "^5.1.0",
     "lodash": "^4.17.20",
     "mongoose": "^5.10.3"
