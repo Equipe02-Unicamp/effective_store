@@ -1,6 +1,17 @@
 # Trabalho - INF325
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Equipe02-Unicamp/effective_store/master?urlpath=lab)
 
+## Equipe 2
+
+Nome   |
+------------------------------------|
+Caroline Augusti |
+Felipe Emygdio de Salles | 
+Gustavo Porto Guedes | 
+Luan Neves da Silva |
+Paulo Mellin Gimenes |
+Thiago Natanael | 
+
 ## Tópicos
 O tópico escolhido para abordar neste trabalho foi o `Catálogo de lojistas associados e produtos`.
 
@@ -69,14 +80,3 @@ $ mongo
 ```
 $ mongoimport --db <NOME_DB> --collection <NOME_DA_COLLECTION> --drop --file <PATH_DO_JSON>
 ```
-
-## Equipe 2
-
-Nome   |
-------------------------------------|
-Caroline Augusti |
-Felipe Emygdio de Salles | 
-Gustavo Porto Guedes | 
-Luan Neves da Silva |
-Paulo Mellin Gimenes |
-Thiago Natanael |
