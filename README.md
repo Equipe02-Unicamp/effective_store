@@ -24,10 +24,12 @@ Para o desenvolvimento das atividades, foi utilizado o seguinte banco de dados:
 
 1. Lojistas com maior número de produtos disponíveis na plataforma
 2. Produtos mais comuns entre os lojistas associados
-3. Países com mais logistas (Sellers)
+3. Países com mais lojistas (Sellers)
 4. Produtos com mais lojistas (Sellers) por região
-5. Lista dos logistas (Sellers) ordenada pelos mais novos
-6. Lista dos logistas (Sellers) ordenada pelos mais antigos
+5. Lista dos lojistas (Sellers) ordenada pelos mais novos
+6. Lista dos lojistas (Sellers) ordenada pelos mais antigos
+7. Lista das faturas que estão em aberto para os lojistas(Sellers) com menos de 1 ano de mercado
+8. Lista das faturas acima de R$ 1000,00
 
 ## Setup
 
