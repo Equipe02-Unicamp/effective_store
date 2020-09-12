@@ -57,11 +57,6 @@ http://localhost:8888/
 docker exec -it jupyter /bin/bash
 ```
 
-### Install npm dependencies
-```
-docker exec -it jupyter npm install
-```
-
 ### Install npm library
 ```
 docker exec -it jupyter npm install <LIB_NAME>
