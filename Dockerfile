@@ -14,7 +14,7 @@ ENV LANGUAGE en_US.UTF-8
 ENV SHELL /bin/bash
 
 COPY ./ ./
-RUN pip3 install -r ./binder/requirements.txt
+RUN pip3 install jupyterlab jupyter-server-proxy
 RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
 RUN apt-get install -y nodejs && npm install -g --unsafe-perm ijavascript
 RUN ijsinstall
