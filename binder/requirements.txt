@@ -1,6 +1,2 @@
 jupyterlab
 jupyter-server-proxy
-pymongo
-imongo-kernel
-pprintpp
-Faker
