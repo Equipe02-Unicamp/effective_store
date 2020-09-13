@@ -20,6 +20,7 @@
     "country-data": "0.0.31",
     "faker": "^5.1.0",
     "lodash": "^4.17.20",
+    "moment": "^2.28.0",
     "mongoose": "^5.10.3"
   }
 }
